@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Profile Card</title>
+    <!-- Link to Google Font Orbitron -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Basic reset for margin and padding */
+        body, h2, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Set body to use Flexbox for centering content */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Style for the profile card */
+        .card {
+            position: relative;
+            width: 300px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            
+        }
+
+        /* Top left label styling */
+        .card .label {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: #ff5733;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 12px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        /* Profile image styling */
+        .card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        /* Main heading (name) styling */
+        .card h2 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+			font-family: 'Orbitron', sans-serif; 
+        }
+
+        /* Paragraph styling */
+        .card p {
+            margin: 10px 0;
+            color: #777;
+        }
+
+        /* Stats section styling */
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+
+        /* Individual stat box styling */
+        .stats div {
+            text-align: center;
+        }
+
+        .stats div p {
+            margin: 5px 0;
+            color: #333;
+        }
+
+        /* Contact info section styling */
+        .contact-info {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        /* Link styling */
+        .contact-info a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="label">Pro</div>
+        <img src="https://media.licdn.com/dms/image/D5603AQGFqWohmLK0pg/profile-displayphoto-shrink_400_400/0/1693301427195?e=1725494400&v=beta&t=6dbtKrHTY7zRbGemKvBRplHRRD63dcAIkApKGN3ZLy0" alt="Profile Picture">
+        <h2>Rashidul Islam</h2>
+        <p>Web Developer</p>
+        <p>Passionate web developer with over 5 years of experience in creating stunning websites.</p>
+        <div class="stats">
+            <div>
+                <p>Projects</p>
+                <p>250</p>
+            </div>
+            <div>
+                <p>Following</p>
+                <p>546</p>
+            </div>
+            <div>
+                <p>Followers</p>
+                <p>431</p>
+            </div>
+        </div>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:cto@example.com">cto@example.com</a></p>
+            <p>Mobile: <a href="tel:+8801722846689">+8801722846689</a></p>
+        </div>
+    </div>
+</body>
+</html>
